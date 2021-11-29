@@ -70,8 +70,7 @@ Appart, a set of test cases have been developed in order to assure the reliabili
 - test_LedDriverImpl: Integration test case including a series of tests for checking the proper working of the LedDriverImpl used, by using 3 pins of the microcontroller for reading the status of the three data pins of the RGB led. There are 5 tests, one for each of the LED states possible, and they are repeated twice per test case execution.
 
 Here the report of the last execution of both test cases can be found:
-(https://github.com/adrianrejas/bicycle_lamp/blob/master/Test_Cases_Execution.latest.txt)
-- Cables.
+https://github.com/adrianrejas/bicycle_lamp/blob/master/Test_Cases_Execution.latest.txt
 
 
 ## Schematic
@@ -93,7 +92,7 @@ The list of materials used is the following:
 
 A picture of the prototype mounted can be found here:
 
-![alt text](https://github.com/adrianrejas/bicycle_lamp/blob/master/prototype_schematic.png?raw=true)
+![alt text](https://github.com/adrianrejas/bicycle_lamp/blob/master/prototype_mounted.png?raw=true)
 
 The test bench has been implemented in order to get an execution platform for the test cases. The schematic can be found here:
 
