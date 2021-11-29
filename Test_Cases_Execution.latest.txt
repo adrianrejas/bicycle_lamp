@@ -1,0 +1,128 @@
+> Executing task in folder Bicycle lamp: C:\Users\rejoperejo\.platformio\penv\Scripts\platformio.exe test <
+
+Verbose mode can be enabled via `-v, --verbose` option
+Collected 2 items
+
+Processing FSMBikeLamp in uno environment
+----------------------------------------------------------------------------------------------------------------------------------------------------Building...
+Uploading...
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e950f (probably m328p)
+avrdude: reading input file ".pio\build\uno\firmware.hex"
+avrdude: writing flash (6492 bytes):
+
+Writing | ################################################## | 100% 1.04s
+
+avrdude: 6492 bytes of flash written
+avrdude: verifying flash memory against .pio\build\uno\firmware.hex:
+avrdude: load data flash data from input file .pio\build\uno\firmware.hex:
+avrdude: input file .pio\build\uno\firmware.hex contains 6492 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.83s
+
+avrdude: verifying ...
+avrdude: 6492 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:00, H:00, L:00)
+
+avrdude done.  Thank you.
+
+Testing...
+If you don't see any output for the first 10 secs, please reset board (press reset button)
+
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:308:test_initial_status   [PASSED]
+Action ID 0 for FSM in state ID 0
+Change FSM to state id 1
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:309:test_button1_pressed_at_red_led_off   [PASSED]
+Action ID 1 for FSM in state ID 0
+Change FSM to state id 0
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:310:test_button2_pressed_at_red_led_off   [PASSED]
+Action ID 0 for FSM in state ID 1
+Change FSM to state id 2
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:311:test_button1_pressed_at_red_led_on    [PASSED]
+Action ID 1 for FSM in state ID 1
+Change FSM to state id 4
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:312:test_button2_pressed_at_red_led_on    [PASSED]
+Action ID 0 for FSM in state ID 2
+Change FSM to state id 0
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:313:test_button1_pressed_at_red_led_flash [PASSED]
+Action ID 1 for FSM in state ID 2
+Change FSM to state id 5
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:314:test_button2_pressed_at_red_led_flash [PASSED]
+Action ID 0 for FSM in state ID 3
+Change FSM to state id 4
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:315:test_button1_pressed_at_white_led_off [PASSED]
+Action ID 1 for FSM in state ID 3
+Change FSM to state id 3
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:316:test_button2_pressed_at_white_led_off [PASSED]
+Action ID 0 for FSM in state ID 4
+Change FSM to state id 5
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:317:test_button1_pressed_at_white_led_on  [PASSED]
+Action ID 1 for FSM in state ID 4
+Change FSM to state id 1
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:318:test_button2_pressed_at_white_led_on  [PASSED]
+Action ID 0 for FSM in state ID 5
+Change FSM to state id 3
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:319:test_button1_pressed_at_white_led_flash       [PASSED]
+Action ID 1 for FSM in state ID 5
+Change FSM to state id 2
+test\FSMBikeLamp\test_FSMBikeLamp.cpp:320:test_button2_pressed_at_white_led_flash       [PASSED]
+-----------------------
+13 Tests 0 Failures 0 Ignored
+============================================================ [PASSED] Took 8.90 seconds ============================================================
+Processing LedDriverImpl in uno environment
+----------------------------------------------------------------------------------------------------------------------------------------------------Building...
+Uploading...
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e950f (probably m328p)
+avrdude: reading input file ".pio\build\uno\firmware.hex"
+avrdude: writing flash (6198 bytes):
+
+Writing | ################################################## | 100% 1.00s
+
+avrdude: 6198 bytes of flash written
+avrdude: verifying flash memory against .pio\build\uno\firmware.hex:
+avrdude: load data flash data from input file .pio\build\uno\firmware.hex:
+avrdude: input file .pio\build\uno\firmware.hex contains 6198 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.80s
+
+avrdude: verifying ...
+avrdude: 6198 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:00, H:00, L:00)
+
+avrdude done.  Thank you.
+
+Testing...
+If you don't see any output for the first 10 secs, please reset board (press reset button)
+
+test\LedDriverImpl\test_LedDriverImpl.cpp:190:test_led_off      [PASSED]
+test\LedDriverImpl\test_LedDriverImpl.cpp:192:test_led_red_on   [PASSED]
+test\LedDriverImpl\test_LedDriverImpl.cpp:194:test_led_white_on [PASSED]
+test\LedDriverImpl\test_LedDriverImpl.cpp:196:test_led_red_flash        [PASSED]
+test\LedDriverImpl\test_LedDriverImpl.cpp:198:test_led_white_flash      [PASSED]
+test\LedDriverImpl\test_LedDriverImpl.cpp:190:test_led_off      [PASSED]
+test\LedDriverImpl\test_LedDriverImpl.cpp:192:test_led_red_on   [PASSED]
+test\LedDriverImpl\test_LedDriverImpl.cpp:194:test_led_white_on [PASSED]
+test\LedDriverImpl\test_LedDriverImpl.cpp:196:test_led_red_flash        [PASSED]
+test\LedDriverImpl\test_LedDriverImpl.cpp:198:test_led_white_flash      [PASSED]
+-----------------------
+10 Tests 0 Failures 0 Ignored
+=========================================================== [PASSED] Took 44.77 seconds =========================================================== 
+
+Test           Environment    Status    Duration
+-------------  -------------  --------  ------------
+FSMBikeLamp    uno            PASSED    00:00:08.901
+LedDriverImpl  uno            PASSED    00:00:44.767
+=========================================================== 2 succeeded in 00:00:53.668 ===========================================================

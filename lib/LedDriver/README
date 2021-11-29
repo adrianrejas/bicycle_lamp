@@ -1,0 +1,3 @@
+This directory contains the library with the code for an interface representing a generig LED peripheral able to set both a red and a white lights.
+
+It also include an implementation based on timed interruptions.
